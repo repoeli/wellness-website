@@ -80,12 +80,6 @@ a.btn {
     }
 }
 
-/* Testimonials Section */
-.testimonial-container {
-    padding: 20px;
-    margin-bottom: 20px;
-}
-
 .testimonial-container img {
     width: 80px;
     height: 80px;
@@ -142,7 +136,7 @@ a.btn {
     color: #777;
 }
 
-container-fluid h2 {
+.container-fluid h2 {
     font-family: 'Handlee', cursive;
     color: #3B2F2F;
 }
