@@ -8,6 +8,11 @@
     <title>Seven Seas Spa</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
     <style>
         .navbar-brand {
             display: flex;
@@ -30,6 +35,144 @@
 
         .nav-link.active {
             font-weight: bold;
+        }
+
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/images/hero.png') no-repeat center center;
+            background-size: cover;
+            background-position: center;
+            color: #FFEBD4;
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        .hero-section h1 {
+            font-family: 'Handlee', cursive;
+        }
+
+        .container h2 {
+            font-family: 'Handlee', cursive;
+        }
+
+        a.btn {
+            color: #3B2F2F;
+        }
+
+        .card-img-top {
+            object-fit: cover;
+            height: 200px;
+        }
+
+        .card {
+            border: none;
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card-title {
+            font-size: 1.5rem;
+            color: #3B2F2F;
+        }
+
+        .card-text {
+            color: #3B2F2F;
+        }
+
+        @media (min-width: 768px) and (max-width: 991px) {
+            .row {
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .col-md-6 {
+                display: flex;
+            }
+
+            .col-md-6 .card {
+                flex: 1;
+            }
+        }
+
+        /* Testimonials Section */
+        .testimonial-container {
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .testimonial-container img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto;
+            display: block;
+        }
+
+        .testimonial-container .blockquote {
+            font-style: italic;
+            color: #3B2F2F;
+        }
+
+        .testimonial-container .blockquote-footer {
+            font-style: normal;
+            color: #777;
+        }
+
+        .carousel-item {
+            transition: opacity 0.5s ease-in-out;
+            opacity: 0;
+            /* Initially hide all items */
+        }
+
+        .carousel-item.active {
+            opacity: 1;
+            /* Make only the active item visible */
+        }
+
+        .testimonial-container {
+            padding: 30px;
+            margin-bottom: 30px;
+            background-color: rgba(255, 255, 255, 0.8);
+            /* Add a subtle background */
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            /* Add a subtle shadow */
+        }
+
+        .testimonial-container img {
+            width: 100px;
+            height: 100px;
+        }
+
+        .testimonial-container .blockquote {
+            font-size: 1.2rem;
+            font-style: italic;
+            color: #555;
+        }
+
+        .testimonial-container .blockquote-footer {
+            font-size: 1rem;
+            color: #777;
+        }
+
+        container-fluid h2 {
+            font-family: 'Handlee', cursive;
+            color: #3B2F2F;
+        }
+
+        .footer {
+            background-color: #6F4E37;
+            color: #ffffff;
+        }
+
+        .custom-icon {
+            color: #FFEBD4;
+            /* Sets the icon color */
+            font-size: 24px;
+            /* Optional: Adjust the size of the icon */
         }
     </style>
 </head>
@@ -64,9 +207,147 @@
         </div>
     </nav>
 
+    <div class="container-fluid hero-section text-center">
+        <h1 class="display-4">Welcome to Seven Seas Spa</h1>
+        <p class="lead">Relax and rejuvenate your mind, body, and soul.</p>
+        <a href="#" class="btn btn-light btn-lg">Contact Us</a>
+    </div>
+    <div class="container mt-5">
+        <h2 class="mb-4">Our Services</h2>
+        <div class="row">
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="assets/images/services/yoga.png" class="card-img-top" alt="Yoga Classes">
+                    <div class="card-body">
+                        <h5 class="card-title">Yoga Classes</h5>
+                        <p class="card-text">Invigorate your body and mind with our expert-led yoga sessions.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="assets/images/services/nutrition.png" class="card-img-top" alt="Nutritional Advice">
+                    <div class="card-body">
+                        <h5 class="card-title">Nutritional Advice</h5>
+                        <p class="card-text">Get personalized nutritional guidance to fuel your wellness journey.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="assets/images/services/mental_health.png" class="card-img-top"
+                        alt="Mental Health Support">
+                    <div class="card-body">
+                        <h5 class="card-title">Mental Health Support</h5>
+                        <p class="card-text">Find peace and balance with our mental health support services.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mb-4">
+                <div class="card h-100 shadow-sm">
+                    <img src="assets/images/services/wellness.png" class="card-img-top" alt="Wellness Programs">
+                    <div class="card-body">
+                        <h5 class="card-title">Wellness Programs</h5>
+                        <p class="card-text">Explore our holistic wellness programs for a comprehensive approach to
+                            health.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <h2 class="mb-4">Wellness Tips</h2>
+        <p class="lead">Incorporate these simple tips into your daily routine for a healthier and happier life.</p>
+        <p>Small changes can make a big difference in your overall well-being.</p>
+        <ul>
+            <li><strong>Stay Active:</strong> Move your body daily to boost energy and mood.</li>
+            <li><strong>Eat Healthy:</strong> Nourish your body with wholesome foods for sustained vitality.</li>
+            <li><strong>Get Enough Sleep:</strong> Prioritize rest to rejuvenate your mind and body.</li>
+            <li><strong>Manage Stress:</strong> Practice relaxation techniques to reduce tension and improve focus.</li>
+            <li><strong>Stay Hydrated:</strong> Drink plenty of water to support bodily functions and maintain energy
+                levels.</li>
+        </ul>
+    </div>
+    <div class="container mt-5">
+        <h2 class="mb-4">Testimonials</h2>
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-md-8">
+                            <div class="testimonial-container text-center">
+                                <img src="assets/images/testiminials/testimonial1.png"
+                                    class="rounded-circle mb-3 testimonial-image" alt="Client 1">
+                                <p class="blockquote">"I feel much better since I started taking the yoga classes. Thank
+                                    you!"</p>
+                                <footer class="blockquote-footer">Jane Doe</footer>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-md-8">
+                            <div class="testimonial-container text-center">
+                                <img src="assets/images/testiminials/testimonial2.png"
+                                    class="rounded-circle mb-3 testimonial-image" alt="Client 2">
+                                <p class="blockquote">"The nutritional advice was a game-changer. I have more energy
+                                    now!"</p>
+                                <footer class="blockquote-footer">Alex Smith</footer>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-md-8">
+                            <div class="testimonial-container text-center">
+                                <img src="assets/images/testiminials/testimonial3.png"
+                                    class="rounded-circle mb-3 testimonial-image" alt="Client 3">
+                                <p class="blockquote">"The wellness programs helped me find balance in my life."</p>
+                                <footer class="blockquote-footer">Emily White</footer>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>-->
+        </div>
+    </div>
+    <!-- Footer -->
+    <footer class="footer text-center text-lg-start py-3 mt-auto">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-md-start mb-3 mb-md-0">
+                    <p>© 2022 Seven Seas Spa</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="https://www.facebook.com//" target="_blank" rel="noopener noreferrer"
+                        aria-label="Visit our Facebook page" class="me-2"><i class="bi bi-facebook custom-icon"></i></a>
+                    <a href="https://x.com/" target="_blank" rel="noopener noreferrer"
+                        aria-label="Follow us on Twitter" class="me-2"><i class="bi bi-twitter custom-icon"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
+                        aria-label="Follow us on Instagram" class="me-2"><i class="bi bi-instagram custom-icon"></i></a>
+                    <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"
+                        aria-label="Connect with us on LinkedIn" class="me-2"><i class="bi bi-linkedin custom-icon"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
         crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/840b494494.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
