@@ -1,0 +1,160 @@
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand img {
+    height: 30px;
+    margin-right: 10px;
+}
+
+.navbar-brand span {
+    font-size: 1.2rem;
+    color: #3B2F2F;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.nav-link.active {
+    font-weight: bold;
+}
+
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/hero.png') no-repeat center center;
+    background-size: cover;
+    background-position: center;
+    color: #FFEBD4;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero-section h1 {
+    font-family: 'Handlee', cursive;
+}
+
+.container h2 {
+    font-family: 'Handlee', cursive;
+}
+
+a.btn {
+    color: #3B2F2F;
+}
+
+.card-img-top {
+    object-fit: cover;
+    height: 200px;
+}
+
+.card {
+    border: none;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-title {
+    font-size: 1.5rem;
+    color: #3B2F2F;
+}
+
+.card-text {
+    color: #3B2F2F;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .col-md-6 {
+        display: flex;
+    }
+
+    .col-md-6 .card {
+        flex: 1;
+    }
+}
+
+/* Testimonials Section */
+.testimonial-container {
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.testimonial-container img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto;
+    display: block;
+}
+
+.testimonial-container .blockquote {
+    font-style: italic;
+    color: #3B2F2F;
+}
+
+.testimonial-container .blockquote-footer {
+    font-style: normal;
+    color: #777;
+}
+
+.carousel-item {
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+    /* Initially hide all items */
+}
+
+.carousel-item.active {
+    opacity: 1;
+    /* Make only the active item visible */
+}
+
+.testimonial-container {
+    padding: 30px;
+    margin-bottom: 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Add a subtle background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Add a subtle shadow */
+}
+
+.testimonial-container img {
+    width: 100px;
+    height: 100px;
+}
+
+.testimonial-container .blockquote {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #555;
+}
+
+.testimonial-container .blockquote-footer {
+    font-size: 1rem;
+    color: #777;
+}
+
+container-fluid h2 {
+    font-family: 'Handlee', cursive;
+    color: #3B2F2F;
+}
+
+.footer {
+    background-color: #6F4E37;
+    color: #ffffff;
+}
+
+.custom-icon {
+    color: #FFEBD4;
+    /* Sets the icon color */
+    font-size: 24px;
+    /* Optional: Adjust the size of the icon */
+}
