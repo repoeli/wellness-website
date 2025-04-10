@@ -1,3 +1,7 @@
+h3.team {
+    font-family: 'Handlee', cursive;
+    color: #3B2F2F;
+}
 .navbar-brand {
     display: flex;
     align-items: center;
@@ -22,6 +26,7 @@
 }
 
 .hero-section {
+    min-height: 40vh;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/hero.png') no-repeat center center;
     background-size: cover;
     background-position: center;
@@ -151,4 +156,12 @@ a.btn {
     /* Sets the icon color */
     font-size: 24px;
     /* Optional: Adjust the size of the icon */
+}
+
+/* Thankyou Redirection Page*/
+text-success {
+    color: #3B2F2F;
+    font-size: 1.5rem;
+    font-weight: bold;
+    font-size: 4rem;
 }
