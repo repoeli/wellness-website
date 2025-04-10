@@ -165,3 +165,29 @@ text-success {
     font-weight: bold;
     font-size: 4rem;
 }
+
+/* Return to Top Arrrow */
+.back-to-top {
+    position: fixed;
+    bottom: 100px;
+    right: 20px;
+    font-size: 2rem;
+    z-index: 999;
+}
+
+.back-to-top a {
+    color: hsl(32, 86%, 25%);
+    text-decoration: none;
+}
+
+/* Rotate the Arrow Button in the Footer Newslatter  */
+.custom-send-icon {
+    font-size: 12px; /* Make the icon larger */
+    transform: rotate(45deg);
+    display: inline-block;
+}
+
+.custom-light-brown-btn{
+    background-color: #FFEBD4;
+}
+

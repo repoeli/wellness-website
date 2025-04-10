@@ -18,7 +18,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="index.html">
                 <img src="assets/images/logo.png" alt="Logo">
                 <span>Seven Seas Spa</span>
             </a>
@@ -35,10 +35,10 @@
                         <a class="nav-link" href="about.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
+                        <a class="nav-link" href="services.html">Services</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
+                        <a class="nav-link" href="contact.html#contact">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -48,7 +48,7 @@
     <div class="container-fluid hero-section text-center">
         <h1 class="display-4">Welcome to Seven Seas Spa</h1>
         <p class="lead">Relax and rejuvenate your mind, body, and soul.</p>
-        <a href="contact.html" class="btn btn-light btn-lg">Contact Us</a>
+        <a href="contact.html#contact" class="btn btn-light btn-lg">Contact Us</a>
     </div>
     <div class="container mt-5">
         <h2 class="mb-4">Our Services</h2>
@@ -152,23 +152,55 @@
         </div>
     </div>
     <!-- Footer -->
-    <footer class="footer text-center text-lg-start py-3 mt-auto">
+    <footer class="footer bg-brown text-white py-5 mt-5">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6 text-md-start mb-3 mb-md-0">
-                    <p>© 2022 Seven Seas Spa</p>
+            <div class="row gy-4 align-items-center">
+                <!-- Left column: copyright + social -->
+                <div class="col-lg-6">
+                    <p class="mb-6">© 2022 Seven Seas Spa. All rights reserved.</p>
+                    <div class="mb-3">
+                        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"
+                            aria-label="Visit our Facebook page" class="me-3 text-dark">
+                            <i class="bi bi-facebook custom-icon"></i>
+                        </a>
+                        <a href="https://x.com/" target="_blank" rel="noopener noreferrer"
+                            aria-label="Follow us on Twitter" class="me-3 text-dark">
+                            <i class="bi bi-twitter custom-icon"></i>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
+                            aria-label="Follow us on Instagram" class="me-3 text-dark">
+                            <i class="bi bi-instagram custom-icon"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"
+                            aria-label="Connect with us on LinkedIn" class="me-3 text-dark">
+                            <i class="bi bi-linkedin custom-icon"></i>
+                        </a>
+                    </div>
+
                 </div>
-                <div class="col-md-6 text-md-end">
-                    <a href="https://www.facebook.com//" target="_blank" rel="noopener noreferrer"
-                        aria-label="Visit our Facebook page" class="me-2"><i class="bi bi-facebook custom-icon"></i></a>
-                    <a href="https://x.com/" target="_blank" rel="noopener noreferrer"
-                        aria-label="Follow us on Twitter" class="me-2"><i class="bi bi-twitter custom-icon"></i></a>
-                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
-                        aria-label="Follow us on Instagram" class="me-2"><i class="bi bi-instagram custom-icon"></i></a>
-                    <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer"
-                        aria-label="Connect with us on LinkedIn" class="me-2"><i class="bi bi-linkedin custom-icon"></i></a>
+
+                <!-- Right column: Newsletter -->
+                <div class="col-lg-6">
+                    <h2 class="mb-3">Subscribe to Our Newsletter</<h2>
+                        <form class="row g-3" action="#" method="POST">
+                            <div class="col-sm-5">
+                                <input type="text" class="form-control" name="name" placeholder="Your Name" required>
+                            </div>
+                            <div class="col-sm-5">
+                                <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                            </div>
+                            <div class="col-sm-2">
+                                <button type="submit" class="btn bg-brown w-90 custom-light-brown-btn">
+                                    <i class="bi bi-send custom-send-icon"></i>
+
+                                </button>
+                            </div>
+
                 </div>
+
+                </form>
             </div>
+        </div>
         </div>
     </footer>
 
